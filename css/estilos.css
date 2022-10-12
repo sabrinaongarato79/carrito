@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.contenedor{
+    max-width: 85%;
+    margin: auto;
+}
+
+/* ESTILOS ENCABEZADO  */
+header{
+    background-color: #fff;
+    box-shadow: 0 1px 4px hsl(0deg 3% 60%);
+    padding: 1rem 0;
+}
+header .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo a{
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e94959;
+}
+header .menu ul{
+    list-style: none;
+    display: flex;
+}
+header .menu ul li{
+    margin: 0 1rem;
+}
+header .menu a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 0.8rem;
+    transition: all .5s ease;
+}
+
+header .menu a:hover{
+    opacity: .4;
+}
+header .menu .active{
+    border-bottom:1px solid #e94959;
+}
+
+/* SECCION BIENVENIDA */
+.seccion-bienvenida{
+    padding: 2rem 0;
+    background: url(../img/fondo-bienvenida.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    height: 500px;
+}
+.seccion-bienvenida .contenedor{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-bienvenida .msj-bienvenida{
+    background-color: rgba(255, 255, 255, 0.801);
+    width: 600px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #e94959;
+    border-radius: 5px;
+}
+.seccion-bienvenida .msj-bienvenida h2{
+    margin-bottom: 1rem;
+}
+.seccion-bienvenida .msj-bienvenida p{
+    margin-bottom: .5rem;
+}
+
+/* SECCION PRODCUTOS  */
+.seccion-productos{
+    padding: 2rem;
+}
+
+.seccion-productos h2{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    border-bottom: 1px solid #e94959;
+}
+.seccion-productos .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.seccion-productos .producto{
+    text-align: center;
+    padding: 1rem;
+    width: 28%;
+    border: 2px solid #e94959;
+    border-radius: 10px;
+}
+.seccion-productos .producto h4{
+    margin-bottom: 1rem;
+}
+.seccion-productos .producto .precio{
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #e94959;
+    margin-bottom: 2rem;
+}
+.seccion-productos .producto a{
+    text-decoration: none;
+    background-color: #e94959;
+    padding: 0.5rem 0.7rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+.seccion-productos .producto a:hover{
+    background-color: transparent;
+    color: #e94959;
+    border: 1px solid #000;
+}
+.seccion-productos .producto img{
+   max-width: 200px;
+}
+
+
+/* ESTILOS FOOTER  */
+footer{
+    background-color: #e6e6e6;
+    padding: 2rem 0;
+}
+footer .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto, .copyright, .redes{
+    width: 30%;
+    text-align: center;
+
+}
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #e94959;
+    border-left: 1px solid #e94959;
+}
+.copyright a{
+    text-decoration: none;
+    color: #e94959;
+}
+footer h4{
+    margin-bottom: 1rem;
+}
+.redes ul{
+    display: flex;
+    justify-content: center;
+}
+.redes ul li{
+    margin: 0 .3rem;
+}
+.redes ul li i{
+    color: #000;
+    font-size: 22px;
+}
+.redes ul li a:hover{
+    transition: all .5s ease;
+    opacity: .5;
+}
+footer ul{
+    list-style: none;
+}
+
+
+/* SECCION CARRITO */
+
+.seccion-carrito{
+    padding: 2rem 0;
+}
+
+.seccion-carrito .subtitulo-seccion{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    border-bottom: 1px solid #e94959;
+}
+
+
+.seccion-carrito .carrito {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+.seccion-carrito .carrito .producto{
+    text-align: center;
+    padding: 1rem;
+    width: 28%;
+    border: 2px solid #e94959;
+    border-radius: 10px;
+    margin: 0 .5rem;
+}
+.carrito .producto img{
+    max-width: 200px;
+ }
+ .carrito .producto .inputCantidad {
+   
+    max-width: 30px;
+ }
+ .carrito .producto .cantidad{
+    margin-bottom: 1rem;
+ }
+ .carrito .producto .precio{
+    font-weight: bold;
+    color: #e94959;
+    margin-bottom: 1rem;
+}
+.carrito .producto a{
+    text-decoration: none;
+    background-color: #e94959;
+    padding: 0.5rem 0.7rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.contenedor-total{
+    margin-top: 1rem;
+    border: 1px solid #e94959;
+    padding: 1rem;
+    text-align: right;
+    display: none;
+}
+.contenedor-total p{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#comprar{
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    background-color: #e94959;
+    color: #fff;
+    text-decoration: none;
+}
+.msj-compra{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    color: #e94959;
+}
